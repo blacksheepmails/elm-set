@@ -9,9 +9,9 @@ module AllSet
     ) where
 
 {-| A set of unique values. The values can be any type `v` where:
-  a and b are type `v` and `(toString a) == (toString b)` if `a == b`
+  `a` and `b` are type `v` and `(toString a) == (toString b)` if `a == b`
 
-Insert, remove, and query operations all take *O(K log n) * time where n is the number of elements in the set and K is the runtime of toString on an element. Set equality with
+Insert, remove, and query operations all take *O(K log n) * time where `n` is the number of elements and `K` is the runtime of `toString` on an element. Set equality with
 `(==)` is unreliable and should not be used.
 
 # AllSet
