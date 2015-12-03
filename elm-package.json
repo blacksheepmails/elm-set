@@ -1,5 +1,5 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "summary": "A Elm set implementation that can store any type",
     "repository": "https://github.com/blacksheepmails/elm-set.git",
     "license": "BSD3",
