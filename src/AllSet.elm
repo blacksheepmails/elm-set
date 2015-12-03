@@ -14,8 +14,8 @@ module AllSet
 Insert, remove, and query operations all take *O(K log n) * time where n is the number of elements in the set and K is the runtime of toString on an element. Set equality with
 `(==)` is unreliable and should not be used.
 
-# AllSets
-@docs AllSet
+# AllSet
+@docs Set
 
 # Build
 @docs empty, singleton, insert, remove
