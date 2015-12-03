@@ -8,15 +8,14 @@ module AllSet
     , toList, fromList
     ) where
 
-{-| A set of unique values. The values can be any a type. This
-includes `Int`, `Float`, `Time`, `Char`, `String`, and tuples or lists
-of a types.
+{-| A set of unique values. The values can be any type `v` where:
+  a and b are type `v` and `(toString a) == (toString b)` if `a == b`
 
-Insert, remove, and query operations all take *O(log n)* time. Set equality with
+Insert, remove, and query operations all take *O(K log n) * time where n is the number of elements in the set and K is the runtime of toString on an element. Set equality with
 `(==)` is unreliable and should not be used.
 
-# Sets
-@docs Set
+# AllSets
+@docs AllSet
 
 # Build
 @docs empty, singleton, insert, remove
